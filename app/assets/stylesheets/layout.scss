@@ -2483,7 +2483,6 @@ table {
       color: $color-success;
 
       &::before {
-        color: $color-success;
         content: "\6c";
       }
     }
@@ -2492,7 +2491,6 @@ table {
       color: $color-alert;
 
       &::before {
-        color: $color-alert;
         content: "\76";
       }
     }
