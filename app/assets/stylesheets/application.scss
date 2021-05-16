@@ -2,7 +2,8 @@
 @import "foundation_and_overrides";
 @import "fonts";
 @import "font-awesome-sprockets";
-@import "font-awesome";
+@import "font-awesome/variables";
+@import "font-awesome/path";
 @import "leaflet";
 @import "icons";
 @import "mixins/*";
