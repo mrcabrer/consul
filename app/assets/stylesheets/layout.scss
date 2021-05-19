@@ -97,7 +97,7 @@ a {
 
 .button.hollow {
   @include normal-selection;
-  border: 1px solid $link;
+  border: 1px solid;
   color: $link;
 }
 
@@ -342,7 +342,7 @@ a {
 
       &::after {
         background: $brand;
-        border-bottom: 2px solid $brand;
+        border-bottom: 2px solid;
         bottom: 0;
         content: "";
         left: 0;
@@ -722,7 +722,7 @@ body > header,
 
       @include breakpoint(medium) {
         @include brand-text;
-        border-bottom: 2px solid $brand;
+        border-bottom: 2px solid;
       }
     }
   }
@@ -794,7 +794,7 @@ body > header,
 
   .is-active {
     @include brand-text;
-    border-bottom: 2px solid $brand;
+    border-bottom: 2px solid;
 
     &:hover {
       text-decoration: none;
