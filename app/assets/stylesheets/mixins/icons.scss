@@ -1499,11 +1499,12 @@ $font-awesome-icons: (
     }
   }
 
-  @supports (mask-image: url()) {
+  @supports (mask-image: url()) and (--foo: 1) {
 
     &::#{$position} {
       @extend %svg-icon;
-      mask-image: image-url("fontawesome/#{$style}/#{$icon}.svg");
+      #{"--fa-icon-#{$style}-#{$icon}"}: asset-data-url("fontawesome/#{$style}/#{$icon}.svg");
+      mask-image: var(--fa-icon-#{$style}-#{$icon});
     }
   }
 }
