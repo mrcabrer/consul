@@ -534,7 +534,7 @@
 .fixed-mobile-content {
 
   @include breakpoint(medium down) {
-    background: #fff;
+    background: $body-background;
     margin-bottom: rem-calc(-1) !important;
     padding-top: $line-height / 2;
   }
@@ -593,7 +593,7 @@
 }
 
 %panel {
-  background: #fff;
+  background: $body-background;
   border: 1px solid;
   border-color: #e5e6e9 #dfe0e4 #d0d1d5;
   border-radius: 0;
@@ -1081,7 +1081,7 @@
       margin-top: 0;
 
       &:hover {
-        background: #fff;
+        background: $body-background;
         color: $text;
       }
     }
@@ -1197,7 +1197,7 @@
 }
 
 .jumbo-budget {
-  background: $white;
+  background: $body-background;
   border-bottom: 2px solid $border;
 
   &.budget-heading {
@@ -1401,7 +1401,7 @@
     transition: height 0.3s;
 
     &.is-fixed {
-      background: $white;
+      background: $body-background;
       border-bottom: 2px solid $border;
       height: auto;
       left: 0;
@@ -1627,9 +1627,9 @@
 }
 
 .zoom-link {
-  background: #fff;
+  background: $body-background;
   border-radius: rem-calc(48);
-  color: #000;
+  color: $text;
   font-size: rem-calc(24);
   font-weight: bold;
   height: rem-calc(48);
